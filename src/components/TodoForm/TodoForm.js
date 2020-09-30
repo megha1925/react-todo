@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import "./TodoForm";
 
 const TodoForm = (props) => {
-  //javascript code
-
   const inputHandler = (e) => {
     props.setInputText(e.target.value);
   };
@@ -22,7 +21,7 @@ const TodoForm = (props) => {
   };
 
   return (
-    <form>
+    <form className="form-group">
       <input
         className="todo-input"
         type="text"
@@ -31,16 +30,16 @@ const TodoForm = (props) => {
         value={props.inputText}
         onChange={inputHandler}
       />
+
       <button onClick={submitHandler} className="todo-button" type="submit">
         <i className="fa fa-plus-square"></i>
       </button>
-      <div>
-        <select name="todos" className="filter-todo">
-          <option value="all">ALL</option>
-          <option value="completed">COMPLETED</option>
-          <option value="uncompleted">UNCOMPLETED</option>
-        </select>
-      </div>
+
+      <select name="todos" className="filter-todo">
+        <option value="all">ALL</option>
+        <option value="completed">COMPLETED</option>
+        <option value="uncompleted">UNCOMPLETED</option>
+      </select>
     </form>
   );
 };

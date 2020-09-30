@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  letter-spacing: 2pt;
+  margin: 5vh;
+  font-size: 30px;
+  color: #1d1d1d;
+  font-family: sans-serif;
+}
