@@ -1,12 +1,49 @@
-.form-group {
+.todo-group {
+  min-height: 20vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.todo-imput {
+.todo-input {
+  width: 60%;
+  height: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  background: white;
 }
 
 .todo-button {
+  width: 60px;
+  height: 60px;
+  font-size: 2.6rem;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: white;
+  color: orange;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.todos {
+.todo-button:hover {
+  background: white;
+  color: red;
+}
+
+.filter-todo {
+  margin-left: 50px;
+  width: 30%;
+  height: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid black;
+  background: white;
 }

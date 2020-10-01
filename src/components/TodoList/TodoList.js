@@ -1,6 +1,8 @@
 import React from "react";
 import Todo from "../Todo/Todo";
 
+import "../TodoList/TodoList.css";
+
 const TodoList = (props) => {
   // todos -> props.todos  every element
   return (

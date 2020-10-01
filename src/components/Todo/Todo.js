@@ -1,4 +1,5 @@
 import React from "react";
+import "../Todo/Todo.css";
 
 const Todo = (props) => {
   const deleteHandler = () => {
@@ -22,7 +23,9 @@ const Todo = (props) => {
   return (
     <div>
       <div className="todo">
-        <li className="todo-item">{props.text}</li>
+        <li className={`todo-item ${props.completed ? "completed" : ""}`}>
+          {props.text}
+        </li>
         <button onClick={completeHandler} className="complete-btn">
           <i className="fas fa-check"></i>
         </button>
@@ -30,6 +33,7 @@ const Todo = (props) => {
           <i className="fas fa-trash"></i>
         </button>
       </div>
+      <div className="seperator"></div>
     </div>
   );
 };
