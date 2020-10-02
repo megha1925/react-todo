@@ -11,6 +11,7 @@ header {
   font-size: 30px;
   color: #1d1d1d;
   font-family: sans-serif;
+  font-weight: bolder;
 }
 
 button:focus {

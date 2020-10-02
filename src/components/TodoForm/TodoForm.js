@@ -20,6 +20,10 @@ const TodoForm = (props) => {
     props.setInputText("");
   };
 
+  const statusHandler = (e) => {
+    props.setStatus(e.target.value);
+  };
+
   return (
     <div className="flexbox-container">
       <form className="todo-group">
@@ -36,10 +40,10 @@ const TodoForm = (props) => {
           <i className="fa fa-plus-square"></i>
         </button>
 
-        <select name="todos" className="filter-todo">
-          <option value="all">ALL</option>
-          <option value="completed">COMPLETED</option>
-          <option value="uncompleted">UNCOMPLETED</option>
+        <select onChange={statusHandler} name="todos" className="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
         </select>
       </form>
     </div>
